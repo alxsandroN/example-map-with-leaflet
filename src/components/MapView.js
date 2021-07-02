@@ -16,12 +16,12 @@ const MapView = () => {
     // const para definir centro y zoom del mapa inicial
     const [mapCenter, setMapCenter] = useState(
         {
-            coordinates:{ ltn:'19.42699655663159', lng:'-99.1676650667239'},
+            coordinates:[19.42699655663159,-99.1676650667239] ,
             zoom:10
         }
     )
 
-    return (<MapContainer center={mapCenter.coordinates} zoom={map.center.zoom} >
+    return (<MapContainer center={mapCenter.coordinates} zoom={mapCenter.zoom} >
         <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
