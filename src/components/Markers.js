@@ -1,13 +1,18 @@
 import React from 'react'
 import { Marker } from 'react-leaflet'
-import {IconMarker} from './IconMarker'
+import { IconMarker } from './IconMarker'
 
-const Markers = () => {
-    return (
 
-        <Marker position={{lat:'19.42743127166538', lng:'-99.16666719825562'}} icon={IconMarker} />
+const Markers = (props) => {
 
-    )
+    //Obtenemos el arreglo places desde props
+    const { places } = props;
+
+    const markers =  places.map((place, i) => (
+        <Marker key={i + place.name} position={place.coordinates}
+         icon={IconMarker} />
+    ));              
+    return markers;
 }
 
 export default Markers

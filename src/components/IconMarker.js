@@ -1,4 +1,3 @@
-import React from 'react'
 import IconMine from '../assets/icon-pin-marker.png'
 // marcador
 import L from 'leaflet'

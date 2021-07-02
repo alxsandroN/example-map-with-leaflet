@@ -1,0 +1,32 @@
+{
+    "places":[
+        {
+            "name": "Angel de la Independencia Mx",
+            "coordinates": [
+                19.42699655663159,
+                -99.1676650667239
+            ]
+        },
+        {
+            "name": "My Work - Secretaria de Bienestar Work",
+            "coordinates": [
+                19.431786562049762,
+                 -99.15628047521074
+            ]
+        },
+        {
+            "name": "Foro Sol ",
+            "coordinates": [
+                19.405323896583564,
+                -99.0955887021153
+            ]
+        },
+        {
+            "name": "Museo Soumaya",
+            "coordinates": [
+                19.44280048760695,
+                -99.20473477402626
+            ]
+        }
+    ]
+}
