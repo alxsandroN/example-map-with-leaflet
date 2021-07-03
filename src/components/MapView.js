@@ -5,9 +5,7 @@ import 'leaflet/dist/leaflet.css'
 import Markers from './Markers'
 
 import {places} from '../assets/locations-example.json'
-import { map } from 'leaflet'
 //Importamos el arreglo places del json para obtener los lugares
-
 /*
 --Se tiene que importar la hoja de estilos de leaflet para que se visualice correctamente el mapa
 --Se agrega las dimensiones del mapa llamado .leaflet-container en una hoja de estilos
