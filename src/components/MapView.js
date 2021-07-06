@@ -1,9 +1,11 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 
-import { MapContainer, TileLayer } from 'react-leaflet'
+import { MapContainer, TileLayer,Marker,Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import Markers from './Markers'
+import { IconMarker } from './IconMarker'
 
+import {useLocation, useHistory} from 'react-router-dom'
 import {places} from '../assets/locations-example.json'
 //Importamos el arreglo places del json para obtener los lugares
 /*
@@ -11,6 +13,12 @@ import {places} from '../assets/locations-example.json'
 --Se agrega las dimensiones del mapa llamado .leaflet-container en una hoja de estilos
  */
 const MapView = () => {
+
+    const location = useLocation();
+    //const history = useHistory();
+    console.log("Utilizando useLocation", location);
+
+   
     // const para definir centro y zoom del mapa inicial
     const [mapCenter, setMapCenter] = useState(
         {
@@ -19,6 +27,25 @@ const MapView = () => {
         }
     )
 
+
+
+      
+      if(location.myLocation  ){
+          console.log("gggggg")
+          return(<MapContainer center={{lat:location.myLocation.latitude, lng:location.myLocation.longitude}} zoom={18} >
+            <TileLayer
+                attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={{lat:location.myLocation.latitude, lng:location.myLocation.longitude}}
+            icon={IconMarker} >
+            <Popup>
+               Ubicación Actual
+            </Popup>
+        </Marker>
+        </MapContainer>)
+      
+      }
     return (<MapContainer center={mapCenter.coordinates} zoom={mapCenter.zoom} >
         <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
