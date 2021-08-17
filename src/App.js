@@ -1,12 +1,13 @@
 import './App.css';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 import MapView from './components/MapView';
 import MyLocation from './components/MyLocation';
 
 function App() {
   return (
-    <BrowserRouter basename="/Mapa-Leaflet">
+    <Router basename="/Mapa-Leaflet">
       <Switch>
         <Route path='/myLocation'   >
           <MyLocation />
@@ -15,7 +16,7 @@ function App() {
           <MapView />
         </Route>
       </Switch>
-    </BrowserRouter>
+    </Router>
   );
 }
 
