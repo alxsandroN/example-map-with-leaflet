@@ -1,5 +1,6 @@
 {
   "name": "maps-leaflet",
+  "homepage": "https://alxsandron.github.io/example-map-with-leaflet",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
