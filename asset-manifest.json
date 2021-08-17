@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/example-map-with-leaflet/static/css/main.212ad307.chunk.css",
+    "main.js": "/example-map-with-leaflet/static/js/main.348e46cb.chunk.js",
+    "main.js.map": "/example-map-with-leaflet/static/js/main.348e46cb.chunk.js.map",
+    "runtime-main.js": "/example-map-with-leaflet/static/js/runtime-main.b0a2662e.js",
+    "runtime-main.js.map": "/example-map-with-leaflet/static/js/runtime-main.b0a2662e.js.map",
+    "static/css/2.b4ebbe46.chunk.css": "/example-map-with-leaflet/static/css/2.b4ebbe46.chunk.css",
+    "static/js/2.43e6b6ca.chunk.js": "/example-map-with-leaflet/static/js/2.43e6b6ca.chunk.js",
+    "static/js/2.43e6b6ca.chunk.js.map": "/example-map-with-leaflet/static/js/2.43e6b6ca.chunk.js.map",
+    "static/js/3.34190f63.chunk.js": "/example-map-with-leaflet/static/js/3.34190f63.chunk.js",
+    "static/js/3.34190f63.chunk.js.map": "/example-map-with-leaflet/static/js/3.34190f63.chunk.js.map",
+    "index.html": "/example-map-with-leaflet/index.html",
+    "static/css/2.b4ebbe46.chunk.css.map": "/example-map-with-leaflet/static/css/2.b4ebbe46.chunk.css.map",
+    "static/css/main.212ad307.chunk.css.map": "/example-map-with-leaflet/static/css/main.212ad307.chunk.css.map",
+    "static/js/2.43e6b6ca.chunk.js.LICENSE.txt": "/example-map-with-leaflet/static/js/2.43e6b6ca.chunk.js.LICENSE.txt",
+    "static/media/icon-pin-marker.f46be6c2.png": "/example-map-with-leaflet/static/media/icon-pin-marker.f46be6c2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b0a2662e.js",
+    "static/css/2.b4ebbe46.chunk.css",
+    "static/js/2.43e6b6ca.chunk.js",
+    "static/css/main.212ad307.chunk.css",
+    "static/js/main.348e46cb.chunk.js"
+  ]
+}
